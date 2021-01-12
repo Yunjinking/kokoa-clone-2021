@@ -7,6 +7,7 @@
     <title>Friends - Kokoa Clone</title>
   </head>
   <body>
+    <!-- status-bar -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -21,7 +22,59 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-
+    <!-- header -->
+    <header class="screen-header">
+      <h1 class="csreen-header__title">Friends</h1>
+      <div class="csreen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+    <!-- finding friends -->
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i> Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+    <!-- user list -->
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://images.unsplash.com/photo-1533537841959-705741f3d3a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">YunjinKing</h4>
+            <!-- <h6 class="user-component__subtitle">this is whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span><i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://images.unsplash.com/photo-1533537841959-705741f3d3a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- navication -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -40,14 +93,13 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="#">
-            <span class="nav__reddot"></span>
+            <span class="nav__redDot"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>
       </ul>
     </nav>
-
-    <!--Icon script-->
+    <!--Fond Awosom Icon script-->
     <script
       src="https://kit.fontawesome.com/ddd37bf2c6.js"
       crossorigin="anonymous"
