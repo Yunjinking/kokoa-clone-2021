@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
   </head>
   <body>
     <!-- status-bar -->
@@ -23,65 +23,78 @@
       </div>
     </div>
     <!-- header -->
-    <header class="screen-header">
-      <h1 class="csreen-header__title">Chats</h1>
+    <header class="screen-header screen-header__more">
+      <h1 class="csreen-header__title">More</h1>
       <div class="csreen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+        <span class="redDot"></span>
       </div>
     </header>
-    <!-- chats list -->
-    <main class="main-screen chats-screen">
+    <!-- more main list -->
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
             src="https://images.unsplash.com/photo-1533537841959-705741f3d3a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"
-            class="user-component__avatar user-component__avatar"
+            class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
             <h4 class="user-component__title">YunjinKing</h4>
-            <h6 class="user-component__subtitle">
-              Please check My Kokoa Account Info
-            </h6>
+            <div class="user-component__subtitle-wrap">
+              <h6 class="user-component__subtitle">+82 10-1234-5678</h6>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
           </div>
         </div>
         <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <div class="badge">1</div>
+          <i class="far fa-comment-alt fa-2x"></i>
         </div>
       </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://images.unsplash.com/photo-1489942986787-cded4ecf962e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Jobbaeng</h4>
-            <h6 class="user-component__subtitle">What are you doing?</h6>
-          </div>
+      <div class="icon-row">
+        <div class="icon-row__icons">
+          <i class="far fa-calendar"></i>
+          <span>Calendar</span>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">21:20</span>
-          <div class="badge">10</div>
+        <div class="icon-row__icons">
+          <i class="far fa-smile-beam"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icons">
+          <i class="fas fa-palette"></i>
+          <span>themes</span>
+        </div>
+        <div class="icon-row__icons">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <span>Account</span>
         </div>
       </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://images.unsplash.com/photo-1439920120577-eb3a83c16dd7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Gaechangwoo</h4>
-            <h6 class="user-component__subtitle">I'm drinking some coffee</h6>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">KoKoa Story</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">20:50</span>
-          <div class="badge">3</div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <span class="more-suggestions__icon-text">KoKoa Friends</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image"></div>
+            <span class="more-suggestions__icon-text"></span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image"></div>
+            <span class="more-suggestions__icon-text"></span>
+          </div>
         </div>
       </div>
     </main>
@@ -96,7 +109,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">14</span
-            ><i class="fas fa-comment fa-2x"></i>
+            ><i class="far fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
