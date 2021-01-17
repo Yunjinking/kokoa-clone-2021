@@ -23,7 +23,7 @@
       </div>
     </div>
     <!-- header -->
-    <header class="alt-header">
+    <header class="alt-header alt-header__chat">
       <div class="alt-header__column">
         <a href="chats.html">
           <i class="fas fa-angle-left fa-3x"></i>
@@ -37,10 +37,9 @@
         <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
-    <!-- setting main list -->
+    <!-- chat main list -->
     <main class="main-screen chat-screen">
       <div class="chat__timestamp">Tuesdya, June 30, 2020</div>
-
       <div class="message-row">
         <img
           src="https://images.unsplash.com/photo-1533537841959-705741f3d3a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"
@@ -49,11 +48,43 @@
           <span class="message__author">YunjinKing</span>
           <div class="message__info">
             <span class="message__bubble">Hi!</span>
-            <span class="message__time">21:27</span>
+            <span class="message__time">21:19</span>
           </div>
         </div>
       </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi nice to meet you!</span>
+            <span class="message__time">21:20</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://images.unsplash.com/photo-1533537841959-705741f3d3a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80"
+        />
+        <div class="message-row__content">
+          <span class="message__author">YunjinKing</span>
+          <div class="message__info">
+            <span class="message__bubble">Please check My Kokoa Account Info</span>
+            <span class="message__time">21:22</span>
+          </div>
+        </div>
     </main>
+    <!-- input-form -->
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message.">
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
     <!--Fond Awosom Icon script-->
     <script
       src="https://kit.fontawesome.com/ddd37bf2c6.js"
